@@ -50,6 +50,7 @@ import HeroFooterAd from './HeroFooterAd.vue';
     font-weight: 600;
     font-size: 75px;
     line-height: 90px;
+    font-family: var(--font-family-primary);
 }
 .description {
     font-family: var(--font-family-secondary);
