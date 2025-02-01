@@ -1,0 +1,27 @@
+body {
+    color: var(--color-black-l);
+    font-family: var(--font-family-primary);
+}
+
+.container {
+    max-width: calc(1248px + 96px * 2);
+    margin-inline: auto;
+    padding-inline: 96px;
+}
+
+.button {
+    padding: 18px 26px;
+    border-radius: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-inline: 20px;
+    }
+}
+
