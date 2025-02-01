@@ -1,20 +1,16 @@
 <template>
   <header>
     <TheHeader />
-
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
+        <!-- <RouterLink to="/">Home</RouterLink> -->
   </header>
-
-  <RouterView />
+  <TheHero />
+  <!-- <RouterView /> -->
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import TheHeader from '@/components/TheHeader/TheHeader.vue';
+import TheHero from './components/TheHero/TheHero.vue';
 </script>
 
 <style module></style>
