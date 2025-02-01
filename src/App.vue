@@ -1,18 +1,18 @@
 <template>
-<RouterLink to="/">Home</RouterLink>
-<RouterLink to="/about">About</RouterLink>
-    <!-- <TheHeader />
-\
-  <TheHero />
-
-   <AppFeatures /> -->
-
-   <RouterView />
+  <RouterLink :class="$style.link" to="/">Home</RouterLink>
+  <RouterLink :class="$style.link" to="/about">About</RouterLink>
+  <RouterView />
 </template>
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import TheHeader from '@/components/TheHeader/TheHeader.vue';
-import TheHero from './components/TheHero/TheHero.vue';
-import AppFeatures from './components/AppFeatures/AppFeatures.vue';
 </script>
+
+<style module>
+.link {
+  font-weight: 700;
+  font-size: 28px;
+  margin-right: 100px;
+  color: red;
+}
+</style>
