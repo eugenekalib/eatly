@@ -1,0 +1,63 @@
+<template>
+    <div :class="$style.wrapper">
+        <img :src="dishImage" :alt="title" :class="$style.image"/>
+        <div :class="$style.info">
+            <h2 :class="$style.heading">{{ title }}</h2>
+            <p :class="$style.text">{{ status }}</p>
+        </div>
+        <span :class="$style.time">{{ time }}</span>
+    </div>
+</template>
+
+<script setup>
+import dishImage from '@/assets/images/dish1little.png';
+defineProps({
+  image: String,
+  title: String,
+  status: String,
+  time: String
+});
+</script>
+
+<style module>
+.wrapper {
+    max-width: 328px;
+    max-height: 90px;
+    background-color: var(--color-white);
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+.image {
+    max-height: 80px;
+    max-width: 80px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+}
+.info {
+    padding-top: 18px;
+    padding-bottom: 24px;
+    padding-left: 18px;
+}
+.heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+}
+.text {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 14px;
+}
+.time {
+    margin-top: auto;
+    margin-left: auto;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--color-white-dark);
+}
+</style>

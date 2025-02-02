@@ -8,25 +8,32 @@
             <AppButton type="outlined">Go Pro</AppButton>
             <HeroFooterAd :class="$style.footer" />
         </div>
-        <HeroImage />
+        <div :class="$style.images">
+            <img src="@/assets/images/dish1little.png" alt="" :class="$style.image">
+            <AppCard
+                title="Chicken Hell"
+                status="On The Way"
+                time="3:09 PM"
+            />
+        </div>
     </div>
 </template>
 
 <script setup>
-import HeroImage from '@/assets/images/HeroImage.vue';
-import AppButton from '../TheHeader/ui/AppButton.vue';
+import AppButton from '@/components/ui/AppButton.vue';
 import HeroFooterAd from './HeroFooterAd.vue';
+import AppCard from '../AppCard/AppCard.vue';
 </script>
 
 <style module>
 .wrapper {
     margin-top: 49px;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 130px;
 }
 .text {
     margin-top: 70px;
+    max-width: 590px;
 }
 .ad {
     color: var(--color-dark-lighter);
@@ -66,5 +73,11 @@ import HeroFooterAd from './HeroFooterAd.vue';
 }
 .footer {
     padding-top: 33px;
+}
+.image {
+    max-width: 422px;
+    max-height: 422px;
+    padding-top: 19px;
+    margin-left: 175px;
 }
 </style>
