@@ -16,7 +16,6 @@
 import HeroImage from '@/assets/images/HeroImage.vue';
 import AppButton from '../TheHeader/ui/AppButton.vue';
 import HeroFooterAd from './HeroFooterAd.vue';
-
 </script>
 
 <style module>

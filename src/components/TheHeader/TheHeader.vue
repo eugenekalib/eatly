@@ -35,6 +35,4 @@ import AppButton from './ui/AppButton.vue';
         padding-inline: 20px;
     }
 }
-
-
 </style>

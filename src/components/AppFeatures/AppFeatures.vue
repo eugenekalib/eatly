@@ -11,9 +11,9 @@
 
 <script setup>
 const features = [
-  { head: "10K+", text: "Satisfied Costumers All Great Over The World"},
-  { head: "4M", text: "Healthy Dishes Sold Including Milk Shakes Smooth"},
-  { head: "99.99%", text: "Reliable Customer Support We Provide Great Experiences"},
+  { head: '10K+', text: 'Satisfied Costumers All Great Over The World'},
+  { head: '4M', text: 'Healthy Dishes Sold Including Milk Shakes Smooth'},
+  { head: '99.99%', text: 'Reliable Customer Support We Provide Great Experiences'},
 ];
 </script>
 

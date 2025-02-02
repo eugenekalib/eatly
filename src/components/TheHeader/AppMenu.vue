@@ -1,21 +1,17 @@
 <template>
     <div :class="$style.wrapper">
-        <nav>
-            <ul :class="$style.menu">
-                <li v-for="(link, index) in links" :key="index">
-                    <a :href="link.url">{{ link.text }}</a>
-                </li>
-            </ul>
+        <nav :class="$style.menu" v-for="(link, index) in links" :key="index">
+            <RouterLink :class="$style.link" :to="link.url">{{ link.text }}</RouterLink>
         </nav>
     </div>
 </template>
 
 <script setup>
 const links = [
-  { text: "Home", url: "/" },
-  { text: "About", url: "/about" },
-  { text: "Services", url: "/services" },
-  { text: "Contact", url: "/contact" },
+  { text: 'Home', url: '/' },
+  { text: 'Blog', url: '/blog' },
+  { text: 'Pricing', url: '/pricing'},
+  { text: 'Contact', url: '/contact'},
 ];
 </script>
 
@@ -23,6 +19,7 @@ const links = [
 .wrapper {
     display: flex;
     align-items: center;
+    gap: 54px;
 }
 .menu {
     display: flex;
@@ -31,6 +28,5 @@ const links = [
     font-size: 17px;
     line-height: 26px;
     color: var(--color-dark);
-    gap: 54px;
 }
 </style>

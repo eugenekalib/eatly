@@ -1,11 +1,9 @@
 <script setup>
-import TheHeader from '@/components/TheHeader/TheHeader.vue';
+import AppFeatures from '@/components/AppFeatures/AppFeatures.vue';
 import TheHero from '@/components/TheHero/TheHero.vue';
-
 </script>
 
 <template>
-  <TheHeader />
-
   <TheHero />
+  <AppFeatures />
 </template>
