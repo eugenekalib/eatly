@@ -40,9 +40,12 @@ const features = [
     line-height: 54px;
 }
 .text {
+    padding-top: 10px;
     font-family: Inter;
-    font-size: 14.4px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 21.6px;
+    max-width: 203px;
+    text-align: center;
 }
 </style>
