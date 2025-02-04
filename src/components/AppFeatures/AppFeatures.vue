@@ -32,6 +32,7 @@ const features = [
     max-width: 260px;
     color: var(--color-white);
     text-align: center;
+    /* border-right: 1px solid #ddd;  */
 }
 .heading {
     font-family: sans-serif;

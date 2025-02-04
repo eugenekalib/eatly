@@ -10,11 +10,12 @@
         </div>
         <div :class="$style.images">
             <img src="@/assets/images/dish1little.png" alt="" :class="$style.image">
-            <AppCard
-                title="Chicken Hell"
-                status="On The Way"
-                time="3:09 PM"
-            />
+            <SmallDishCard :dish="{
+                image: 'assets/images/dish1little.png',
+                title: 'Chicken Hell',
+                status: 'On The Way',
+                time: '3:09 pm'
+            }"/>
         </div>
     </div>
 </template>
@@ -22,7 +23,7 @@
 <script setup>
 import AppButton from '@/components/ui/AppButton.vue';
 import HeroFooterAd from './HeroFooterAd.vue';
-import AppCard from '../AppCard/AppCard.vue';
+import SmallDishCard from '../AppCard/SmallDishCard.vue';
 </script>
 
 <style module>

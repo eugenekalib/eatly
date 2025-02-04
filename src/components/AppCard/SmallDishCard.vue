@@ -1,21 +1,17 @@
 <template>
     <div :class="$style.wrapper">
-        <img :src="dishImage" :alt="title" :class="$style.image"/>
+        <img :src="dish.image" :alt="dish.title" :class="$style.image"/>
         <div :class="$style.info">
-            <h2 :class="$style.heading">{{ title }}</h2>
-            <p :class="$style.text">{{ status }}</p>
+            <h2 :class="$style.heading">{{ dish.title }}</h2>
+            <p :class="$style.text">{{ dish.status }}</p>
         </div>
-        <span :class="$style.time">{{ time }}</span>
+        <span :class="$style.time">{{ dish.time }}</span>
     </div>
 </template>
 
 <script setup>
-import dishImage from '@/assets/images/dish1little.png';
 defineProps({
-  image: String,
-  title: String,
-  status: String,
-  time: String
+    dish: Object
 });
 </script>
 

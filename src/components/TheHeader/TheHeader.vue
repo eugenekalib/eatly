@@ -4,7 +4,7 @@
             <HeaderLogo />
             <AppMenu :class="$style.menu" />
             <div :class="$style.userActions">
-                <AppButton type="white">Login</AppButton>
+                <AppButton type="transparent">Login</AppButton>
                 <AppButton type="primary">Sign up</AppButton>
             </div>
         </div>
