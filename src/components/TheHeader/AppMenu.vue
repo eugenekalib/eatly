@@ -1,9 +1,11 @@
 <template>
-    <div :class="$style.wrapper">
-        <nav :class="$style.menu" v-for="(link, index) in links" :key="index">
-            <RouterLink :class="$style.link" :to="link.url">{{ link.text }}</RouterLink>
-        </nav>
-    </div>
+    <nav :class="$style.menu">
+        <RouterLink 
+            v-for="(link, index) in links" :key="index"
+            :class="$style.link" :to="link.url">
+                {{ link.text }}
+        </RouterLink>
+    </nav>
 </template>
 
 <script setup>
@@ -16,13 +18,10 @@ const links = [
 </script>
 
 <style module>
-.wrapper {
+.menu {
     display: flex;
     align-items: center;
     gap: 54px;
-}
-.menu {
-    display: flex;
     font-family: var(--font-family-secondary);
     font-weight: 500;
     font-size: 17px;
