@@ -6,12 +6,12 @@
             <p :class="$style.description">EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a $20 bonus.</p>
             <AppButton :class="$style.button" type="primary">Get started</AppButton>
             <AppButton type="outlined">Go Pro</AppButton>
-            <HeroFooterAd :class="$style.footer" />
+            <img :class="$style.footer" src="@/images/herofooterad.png" alt="">
         </div>
         <div :class="$style.images">
-            <img src="@/assets/images/dish1little.png" alt="" :class="$style.image">
+            <img src="@/images/dish1little.png" alt="" :class="$style.image">
             <SmallDishCard :dish="{
-                image: 'assets/images/dish1little.png',
+                image: '@/images/dish1little.png',
                 title: 'Chicken Hell',
                 status: 'On The Way',
                 time: '3:09 pm'
@@ -22,8 +22,7 @@
 
 <script setup>
 import AppButton from '@/components/ui/AppButton.vue';
-import HeroFooterAd from './HeroFooterAd.vue';
-import SmallDishCard from '../AppCard/SmallDishCard.vue';
+import SmallDishCard from '@/components/AppCard/SmallDishCard.vue';
 </script>
 
 <style module>
@@ -74,6 +73,7 @@ import SmallDishCard from '../AppCard/SmallDishCard.vue';
 }
 .footer {
     padding-top: 33px;
+    max-width: 301px;
 }
 .image {
     max-width: 422px;

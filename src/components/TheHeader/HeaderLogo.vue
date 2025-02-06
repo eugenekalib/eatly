@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import LogoImage from '@/assets/images/LogoImage.vue';
+import LogoImage from '@/components/icons/LogoImage.vue';
 </script>
 
 <style module>

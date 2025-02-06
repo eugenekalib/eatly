@@ -11,7 +11,18 @@
 
 <script setup>
 defineProps({
-    dish: Object
+  dish: {
+    type: Object,
+    required: true,
+    validator: (value) => {
+      return (
+        typeof value.title === 'string' &&
+        typeof value.image === 'string' &&
+        typeof value.status === 'string' &&
+        typeof value.time === 'string'
+      );
+    }
+  }
 });
 </script>
 
